@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url(https://c.tenor.com/KBe_nw4IL2QAAAAC/matrix-code.gif);
+            font-family: sans-serif;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 95%;
+            height: 80%;
+            background-color: transparent;
+
+            transform: translate(2.5%, 10%);
+        }
+
+        .box > img {
+            width: 99%;
+            height: 98%;
+
+            transform: translate(0.5%, 1%);
+        }
+
+        .top, .bottom {
+            position: absolute;
+            width: 3%;
+            height: 8%;
+        }
+
+        .top {
+            top: -10;
+            border-top: 2px solid red;
+        }
+
+        .bottom {
+            bottom: -10;
+            border-bottom: 2px solid red;
+        }
+
+        .left {
+            left: -10;
+            border-left: 2px solid red;
+        }
+
+        .right {
+            right: -10;
+            border-right: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://upload.wikimedia.org/wikipedia/it/1/19/Morpheus_%28personaggio%29.png">
+        <div class="top left"></div>
+        <div class="top right"></div>
+        <div class="bottom right"></div>
+        <div class="bottom left"></div>
+    </div>
+</body>
+</html>

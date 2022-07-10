@@ -1,0 +1,121 @@
+body {
+    background: url(https://sourcedigit.com/wp-content/uploads/2020/10/ubuntu-20-10-wallpaper.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.terminal {
+    border-radius: 5px;
+    width: 75%;
+    height: 75%;
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.terminal>.terminal-header>.button-minimize {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    cursor: pointer;
+}
+
+.terminal>.terminal-header>.button-zoom {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    font-size: 11px;
+    background-color: rgb(160, 160, 160);
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    cursor: pointer;
+}
+
+.terminal>.terminal-header>.button-exit {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(170, 36, 36);
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 29px;
+    cursor: pointer;
+}
+
+.terminal>.terminal-header>.button-minimize>.minimize {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.terminal>.terminal-header>.button-zoom>.zoom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.terminal>.terminal-header>.button-exit>.exit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+}
+
+.terminal>.terminal-header>.title {
+    color: #fff;
+    font-size: 8px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.terminal>.terminal-body>.info {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
+    float: left;
+}
+
+.terminal>.terminal-header {
+    background: #555;
+    height: 20px;
+}
+
+.terminal>.terminal-body {
+    background: rgb(102, 59, 93);
+    height: calc(100% - 20px);
+    overflow: auto;
+}
+
+.text {
+    border: transparent;
+    resize: none;
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+.text:focus {
+    outline: none;
+}

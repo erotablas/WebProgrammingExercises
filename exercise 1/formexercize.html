@@ -1,0 +1,195 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+</head>
+<body>
+    <form action="http://sitofittizio.it/search" method="get">
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><h3>Registrazione utente</h3></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td >Indirizzo email*</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Conferma indirizzo e-mail*</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="email" name="email" value="" placeholder="Email" size="34" required></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="email" name="c-email" value="" placeholder="Email" size="34" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><br>Password*</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><br>Conferma Password*</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="password" name="password" value="" placeholder="Password" size="34" required></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="password" name="c-password" value="" placeholder="Password" size="34" required></td>
+            </tr>            
+        </table>
+
+        <table>
+            <tr>
+                <td colspan="15"><hr color="red"><br></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Nome*</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Secondo Nome</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Cognome*</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input type="text" name="nome" value="" placeholder="Nome" required></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="text" name="secondo-nome" value="" placeholder="Secondo Nome"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><input type="text" name="cognome" value="" placeholder="Cognome" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><br>Sesso*</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><br>Città ed indirizzo*</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <select name="sesso" required>
+                        <option value="maschio">Maschio</option>
+                        <option value="femmina">Femmina</option>
+                        <option value="non-binary">Non-Binary</option>
+                        <option hidden>qualche testo che allung</option>
+                    </select>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="6"><input type="text" name="citta-indirizzo" value="" placeholder="Citta e Indirizzo" size="48" required></td>
+            </tr>
+            <tr>
+                <td colspan="15"><hr color="red"><br></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Interessi</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Sistema Utilizzato*</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <table border="1" cellspacing="0">
+                        <tr>
+                            <td width="260">
+                                <input type="checkbox" name="interessi" value="videogame">Videogame<br>
+                                <input type="checkbox" name="Interessi" value="arte">Arte<br>
+                                <input type="checkbox" name="interessi" value="fotografia" checked>Fotografia<br>
+                                <input type="checkbox" name="interessi" value="alcool">Alcool
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <table border="1" cellspacing="0">
+                        <tr>
+                            <td  width="255">
+                                <input type="radio" name="sistema" value="windows">Microsoft Windows<br>
+                                <input type="radio" name="sistema" value="linux">Linux<br>
+                                <input type="radio" name="sistema" value="macos" checked>MacOS<br>
+                                <input type="radio" name="sistema" value="dos">Microsoft DOS
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="11"><hr color="red"><br></td>
+            </tr>
+            <tr>
+                <td colspan="11">
+                    <center>Accetti le condizioni?</center>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11">
+                    <center>
+                        <br><input type="checkbox" name="accetto" value="accetto" required>Accetto*
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="8" align="right">
+                    <br><button style="background-color: darkblue; color: white;">Registrati</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
